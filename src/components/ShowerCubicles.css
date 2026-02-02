@@ -1,0 +1,125 @@
+.shower-cubicles {
+  background: var(--bg);
+}
+
+.shower-cubicles-title.reveal {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.shower-cubicles-intro {
+  max-width: 640px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.shower-cubicles-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.shower-cubicle-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.shower-cubicle-card:last-child {
+  border-bottom: none;
+}
+
+.shower-cubicles.layout-alt .shower-cubicle-image-wrap {
+  order: 2;
+}
+
+.shower-cubicles.layout-alt .shower-cubicle-body {
+  order: 1;
+}
+
+.shower-cubicle-image-wrap {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.shower-cubicle-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+.shower-cubicle-body {
+  min-width: 0;
+}
+
+.shower-cubicle-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  margin: 0 0 1.25rem;
+  color: var(--text-primary);
+}
+
+.shower-cubicle-specs p {
+  margin: 0 0 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.shower-cubicle-specs strong {
+  color: var(--text-primary);
+}
+
+.shower-cubicle-values {
+  font-weight: 400;
+}
+
+.shower-cubicle-addons {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.shower-cubicle-extra {
+  margin: 1.25rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.shower-cubicle-extra li {
+  margin-bottom: 0.5rem;
+}
+
+.shower-cubicle-extra li:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .shower-cubicle-card {
+    grid-template-columns: 1fr;
+  }
+
+  .shower-cubicle-image-wrap {
+    order: -1;
+  }
+}

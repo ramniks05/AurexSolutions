@@ -1,0 +1,29 @@
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.back-to-top:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+}

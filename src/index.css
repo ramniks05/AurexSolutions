@@ -1,0 +1,77 @@
+/* Aurex Solutions theme – gold on teal only. Do NOT use #FFFFFF. */
+:root {
+  --bg: #0E3A3F;
+  --text-primary: #EAD9C3;
+  --text-secondary: #F2E6D6;
+  --button-bg: #EAD9C3;
+  --button-text: #0E3A3F;
+  --border: #1A4E54;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-secondary);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}

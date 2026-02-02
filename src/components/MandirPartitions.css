@@ -1,0 +1,110 @@
+.mandir-partitions {
+  background: var(--bg);
+}
+
+.mandir-partitions-title.reveal {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.mandir-partitions-intro {
+  max-width: 640px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.mandir-partitions-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.mandir-partition-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mandir-partition-card:last-child {
+  border-bottom: none;
+}
+
+.mandir-partitions.layout-alt .mandir-partition-image-wrap {
+  order: 2;
+}
+
+.mandir-partitions.layout-alt .mandir-partition-body {
+  order: 1;
+}
+
+.mandir-partition-image-wrap {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.mandir-partition-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+.mandir-partition-body {
+  min-width: 0;
+}
+
+.mandir-partition-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  margin: 0 0 1.25rem;
+  color: var(--text-primary);
+}
+
+.mandir-partition-specs p {
+  margin: 0 0 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.mandir-partition-specs strong {
+  color: var(--text-primary);
+}
+
+.mandir-partition-values {
+  font-weight: 400;
+}
+
+.mandir-partition-extra {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .mandir-partition-card {
+    grid-template-columns: 1fr;
+  }
+
+  .mandir-partition-image-wrap {
+    order: -1;
+  }
+}

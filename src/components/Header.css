@@ -1,0 +1,225 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.header-nav-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-nav-link {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.header-nav-link:hover {
+  color: var(--text-secondary);
+}
+
+.header-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.header-menu-icon {
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+}
+
+/* Enquiry button in nav – aligned with links */
+.header-enquiry-btn {
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--button-text);
+  background: var(--button-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-enquiry-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Enquiry modal overlay – centered form */
+.header-enquiry-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(14, 58, 63, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.header-enquiry-modal {
+  width: 100%;
+  max-width: 440px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+.header-enquiry-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-enquiry-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.header-enquiry-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.header-enquiry-close:hover {
+  background: var(--border);
+}
+
+.header-enquiry-form {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-enquiry-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.header-enquiry-label input,
+.header-enquiry-label textarea {
+  padding: 0.65rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.header-enquiry-label input::placeholder,
+.header-enquiry-label textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.header-enquiry-label input:focus,
+.header-enquiry-label textarea:focus {
+  outline: none;
+  border-color: var(--text-primary);
+}
+
+.header-enquiry-label textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.header-enquiry-submit {
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    gap: 1rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s, opacity 0.25s;
+  }
+
+  .header-nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header-menu-btn {
+    display: flex;
+  }
+}
