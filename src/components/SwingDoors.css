@@ -100,11 +100,28 @@
 }
 
 @media (max-width: 768px) {
+  .swing-doors-intro {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .swing-doors-grid {
+    gap: 2rem;
+  }
+
   .swing-door-card {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
   }
 
   .swing-door-image-wrap {
     order: -1;
+  }
+
+  .swing-door-title {
+    font-size: 1.35rem;
   }
 }

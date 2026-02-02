@@ -100,11 +100,28 @@
 }
 
 @media (max-width: 768px) {
+  .slide-fold-doors-intro {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .slide-fold-doors-grid {
+    gap: 2rem;
+  }
+
   .slide-fold-door-card {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
   }
 
   .slide-fold-door-image-wrap {
     order: -1;
+  }
+
+  .slide-fold-door-title {
+    font-size: 1.35rem;
   }
 }

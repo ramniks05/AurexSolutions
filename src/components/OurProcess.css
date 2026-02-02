@@ -19,6 +19,16 @@
   .our-process-layout {
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .our-process-list {
+    grid-template-rows: none;
+    min-height: unset;
+  }
+
+  .our-process-item {
+    padding: 1rem 0;
   }
 }
 

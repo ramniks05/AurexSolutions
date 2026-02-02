@@ -12,6 +12,16 @@
   gap: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .product-categories-grid {
+    gap: 1rem;
+  }
+
+  .product-category-card {
+    padding: 1.5rem;
+  }
+}
+
 .product-category-card {
   display: flex;
   flex-direction: column;

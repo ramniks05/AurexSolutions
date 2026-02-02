@@ -45,9 +45,48 @@
 }
 
 @media (max-width: 768px) {
+  .contact-hero {
+    padding: 2rem 1rem;
+  }
+
+  .contact-hero-lead {
+    padding: 0 0.5rem;
+  }
+
   .contact-layout {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
+    padding: 0 0.5rem;
+    max-width: 100%;
+  }
+
+  .contact-form-wrap {
+    padding: 1.5rem;
+  }
+
+  .contact-info-wrap {
+    width: 100%;
+  }
+
+  .contact-map-section {
+    padding: 0 0 2.5rem;
+  }
+
+  .contact-map-wrap {
+    margin: 0 1rem;
+    padding: 0;
+  }
+
+  .contact-map-iframe {
+    height: 320px;
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+
+  .contact-social-icons {
+    justify-content: center;
   }
 }
 

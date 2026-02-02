@@ -12,6 +12,17 @@
   gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  .why-aurex-grid {
+    gap: 1.25rem;
+    max-width: 100%;
+  }
+
+  .why-aurex-card {
+    padding: 1.5rem;
+  }
+}
+
 .why-aurex-card {
   padding: 2rem;
   border: 1px solid var(--border);

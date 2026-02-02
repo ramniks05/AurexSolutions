@@ -12,6 +12,16 @@
   gap: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .mission-vision-grid {
+    gap: 1rem;
+  }
+
+  .mission-vision-card {
+    padding: 1.5rem;
+  }
+}
+
 .mission-vision-card {
   padding: 2rem;
   border: 1px solid var(--border);

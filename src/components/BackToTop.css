@@ -27,3 +27,12 @@
 .back-to-top:active {
   transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}

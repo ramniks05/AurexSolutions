@@ -109,11 +109,28 @@
 }
 
 @media (max-width: 768px) {
+  .invisible-pocket-doors-intro {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .invisible-pocket-doors-grid {
+    gap: 2rem;
+  }
+
   .pocket-door-card {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
   }
 
   .pocket-door-image-wrap {
     order: -1;
+  }
+
+  .pocket-door-title {
+    font-size: 1.35rem;
   }
 }

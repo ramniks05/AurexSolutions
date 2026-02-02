@@ -8,7 +8,22 @@
 
 .faq-list {
   max-width: 640px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 0.25rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer p {
+    padding: 0 1rem 0.875rem;
+  }
 }
 
 .faq-item {

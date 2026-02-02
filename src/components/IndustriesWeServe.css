@@ -15,6 +15,21 @@
   gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .industries-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .industries-name {
+    font-size: 1rem;
+  }
+}
+
 .industries-item {
   padding: 1.5rem;
   border: 1px solid var(--border);

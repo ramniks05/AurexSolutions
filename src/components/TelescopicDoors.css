@@ -100,11 +100,28 @@
 }
 
 @media (max-width: 768px) {
+  .telescopic-doors-intro {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .telescopic-doors-grid {
+    gap: 2rem;
+  }
+
   .telescopic-door-card {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
   }
 
   .telescopic-door-image-wrap {
     order: -1;
+  }
+
+  .telescopic-door-title {
+    font-size: 1.35rem;
   }
 }

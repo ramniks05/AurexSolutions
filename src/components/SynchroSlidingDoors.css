@@ -100,11 +100,28 @@
 }
 
 @media (max-width: 768px) {
+  .synchro-sliding-doors-intro {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .synchro-sliding-doors-grid {
+    gap: 2rem;
+  }
+
   .synchro-door-card {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
   }
 
   .synchro-door-image-wrap {
     order: -1;
+  }
+
+  .synchro-door-title {
+    font-size: 1.35rem;
   }
 }

@@ -100,11 +100,28 @@
 }
 
 @media (max-width: 768px) {
+  .mandir-partitions-intro {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .mandir-partitions-grid {
+    gap: 2rem;
+  }
+
   .mandir-partition-card {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
   }
 
   .mandir-partition-image-wrap {
     order: -1;
+  }
+
+  .mandir-partition-title {
+    font-size: 1.35rem;
   }
 }

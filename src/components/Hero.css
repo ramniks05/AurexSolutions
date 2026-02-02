@@ -47,9 +47,34 @@
   position: relative;
   z-index: 1;
   max-width: 720px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 3rem 1.5rem;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    min-height: 55vh;
+  }
+
+  .hero-banner-img {
+    min-height: 55vh;
+  }
+
+  .hero-banner-content {
+    padding: 2rem 1rem;
+  }
+
+  .hero-headline {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
 }
 
 .hero-headline {

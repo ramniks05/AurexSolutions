@@ -50,6 +50,21 @@
   animation: preloaderText 0.8s ease-out 0.3s forwards;
 }
 
+@media (max-width: 768px) {
+  .preloader-inner {
+    padding: 0 1rem;
+  }
+
+  .preloader-gate {
+    width: 64px;
+    height: 64px;
+  }
+
+  .preloader-title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+}
+
 @keyframes preloaderGate {
   0% {
     opacity: 0;

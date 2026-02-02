@@ -115,11 +115,28 @@
 }
 
 @media (max-width: 768px) {
+  .shower-cubicles-intro {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .shower-cubicles-grid {
+    gap: 2rem;
+  }
+
   .shower-cubicle-card {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
   }
 
   .shower-cubicle-image-wrap {
     order: -1;
+  }
+
+  .shower-cubicle-title {
+    font-size: 1.35rem;
   }
 }
