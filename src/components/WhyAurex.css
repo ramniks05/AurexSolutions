@@ -10,6 +10,23 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
+  perspective: 1000px;
+}
+
+.why-aurex-card {
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.why-aurex-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.why-aurex-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.why-aurex-card:nth-child(3) {
+  animation-delay: 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -19,34 +36,130 @@
   }
 
   .why-aurex-card {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .why-aurex-icon-wrap {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.25rem;
+  }
+
+  .why-aurex-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .why-aurex-card-title {
+    font-size: 1.35rem;
+  }
+
+  .why-aurex-card-text {
+    font-size: 0.95rem;
   }
 }
 
 .why-aurex-card {
-  padding: 2rem;
+  padding: 2.5rem;
   border: 1px solid var(--border);
-  border-radius: 4px;
-  transition: transform 0.2s;
+  border-radius: 8px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.why-aurex-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--text-primary), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.why-aurex-card:hover::before {
+  transform: scaleX(1);
 }
 
 .why-aurex-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  border-color: var(--text-primary);
+}
+
+.why-aurex-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 .why-aurex-icon-wrap {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--border) 0%, rgba(14, 58, 63, 0.1) 100%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-aurex-icon-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--text-primary), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.why-aurex-card:hover .why-aurex-icon-wrap::before {
+  opacity: 1;
+}
+
+.why-aurex-card:hover .why-aurex-icon-wrap {
+  background: var(--text-primary);
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 24px rgba(14, 58, 63, 0.3);
 }
 
 .why-aurex-icon {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
   color: var(--text-primary);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.why-aurex-card:hover .why-aurex-icon {
+  color: var(--bg);
+  transform: scale(1.1);
 }
 
 .why-aurex-card-title {
   font-size: 1.5rem;
-  margin: 0 0 0.75rem;
+  margin: 0 0 1rem;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.why-aurex-card:hover .why-aurex-card-title {
   color: var(--text-primary);
 }
 
@@ -54,7 +167,8 @@
   margin: 0;
   color: var(--text-secondary);
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  transition: color 0.3s ease;
 }
 
 @keyframes fadeInUp {

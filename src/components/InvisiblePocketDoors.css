@@ -46,6 +46,8 @@
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--border);
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .pocket-door-image {
@@ -108,6 +110,18 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pocket-door-card {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .invisible-pocket-doors-grid {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .invisible-pocket-doors-intro {
     margin-left: auto;
@@ -127,7 +141,19 @@
   }
 
   .pocket-door-image-wrap {
-    order: -1;
+    order: 1;
+  }
+
+  .pocket-door-body {
+    order: 2;
+  }
+
+  .invisible-pocket-doors.layout-alt .pocket-door-image-wrap {
+    order: 1;
+  }
+
+  .invisible-pocket-doors.layout-alt .pocket-door-body {
+    order: 2;
   }
 
   .pocket-door-title {

@@ -26,8 +26,9 @@ export default function BackToTop() {
       className="back-to-top"
       onClick={scrollToTop}
       aria-label="Scroll to top"
+      title="Scroll to top"
     >
-      <ChevronUp size={24} strokeWidth={2.5} />
+      <ChevronUp size={26} strokeWidth={2.5} />
     </button>
   )
 }

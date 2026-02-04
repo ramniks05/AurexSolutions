@@ -44,15 +44,24 @@ export default function Header() {
 
   const handleEnquirySubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    
+    // Validate form
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      return
+    }
+    
     const text = [
       '*Enquiry from Aurex Solutions Website*',
       '',
-      `*Name:* ${form.name}`,
-      `*Email:* ${form.email}`,
-      `*Phone:* ${form.phone}`,
+      `*Name:* ${form.name.trim()}`,
+      `*Email:* ${form.email.trim()}`,
+      form.phone.trim() ? `*Phone:* ${form.phone.trim()}` : '',
       '',
-      `*Message:* ${form.message}`,
-    ].join('\n')
+      `*Message:* ${form.message.trim()}`,
+    ]
+      .filter(line => line !== '')
+      .join('\n')
+    
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`
     window.open(url, '_blank')
     closeEnquiry()

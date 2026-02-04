@@ -46,6 +46,8 @@
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--border);
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .swing-door-image {
@@ -99,6 +101,18 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .swing-door-card {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .swing-doors-grid {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .swing-doors-intro {
     margin-left: auto;
@@ -118,7 +132,19 @@
   }
 
   .swing-door-image-wrap {
-    order: -1;
+    order: 1;
+  }
+
+  .swing-door-body {
+    order: 2;
+  }
+
+  .swing-doors.layout-alt .swing-door-image-wrap {
+    order: 1;
+  }
+
+  .swing-doors.layout-alt .swing-door-body {
+    order: 2;
   }
 
   .swing-door-title {

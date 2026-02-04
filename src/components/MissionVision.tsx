@@ -15,7 +15,7 @@ const blocks = [
   {
     id: 'values',
     title: 'Our Values',
-    text: 'Quality in materials and craftsmanship, integrity in every interaction, and a commitment to understanding and meeting our clients’ needs.',
+    text: 'Quality in materials and craftsmanship, integrity in every interaction, and a commitment to understanding and meeting our clients\' needs.',
   },
 ]
 
@@ -30,8 +30,10 @@ export default function MissionVision() {
       <div className="mission-vision-grid">
         {blocks.map((block) => (
           <article key={block.id} className="mission-vision-card">
-            <h3 className="mission-vision-card-title">{block.title}</h3>
-            <p className="mission-vision-card-text">{block.text}</p>
+            <div className="mission-vision-card-content">
+              <h3 className="mission-vision-card-title">{block.title}</h3>
+              <p className="mission-vision-card-text">{block.text}</p>
+            </div>
           </article>
         ))}
       </div>

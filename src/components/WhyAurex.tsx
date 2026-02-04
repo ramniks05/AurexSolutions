@@ -42,9 +42,11 @@ export default function WhyAurex() {
       <div className="why-aurex-grid">
         {values.map((item) => (
           <article key={item.title} className="why-aurex-card">
-            <div className="why-aurex-icon-wrap">{item.icon}</div>
-            <h3 className="why-aurex-card-title">{item.title}</h3>
-            <p className="why-aurex-card-text">{item.text}</p>
+            <div className="why-aurex-content">
+              <div className="why-aurex-icon-wrap">{item.icon}</div>
+              <h3 className="why-aurex-card-title">{item.title}</h3>
+              <p className="why-aurex-card-text">{item.text}</p>
+            </div>
           </article>
         ))}
       </div>

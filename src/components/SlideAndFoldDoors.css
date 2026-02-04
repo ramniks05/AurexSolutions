@@ -46,6 +46,8 @@
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--border);
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .slide-fold-door-image {
@@ -99,6 +101,18 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .slide-fold-door-card {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .slide-fold-doors-grid {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .slide-fold-doors-intro {
     margin-left: auto;
@@ -118,7 +132,19 @@
   }
 
   .slide-fold-door-image-wrap {
-    order: -1;
+    order: 1;
+  }
+
+  .slide-fold-door-body {
+    order: 2;
+  }
+
+  .slide-fold-doors.layout-alt .slide-fold-door-image-wrap {
+    order: 1;
+  }
+
+  .slide-fold-doors.layout-alt .slide-fold-door-body {
+    order: 2;
   }
 
   .slide-fold-door-title {

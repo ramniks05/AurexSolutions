@@ -46,6 +46,8 @@
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--border);
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .telescopic-door-image {
@@ -99,6 +101,18 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .telescopic-door-card {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .telescopic-doors-grid {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .telescopic-doors-intro {
     margin-left: auto;
@@ -118,7 +132,19 @@
   }
 
   .telescopic-door-image-wrap {
-    order: -1;
+    order: 1;
+  }
+
+  .telescopic-door-body {
+    order: 2;
+  }
+
+  .telescopic-doors.layout-alt .telescopic-door-image-wrap {
+    order: 1;
+  }
+
+  .telescopic-doors.layout-alt .telescopic-door-body {
+    order: 2;
   }
 
   .telescopic-door-title {

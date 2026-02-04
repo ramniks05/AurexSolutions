@@ -46,6 +46,8 @@
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--border);
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .mandir-partition-image {
@@ -99,6 +101,18 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mandir-partition-card {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .mandir-partitions-grid {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .mandir-partitions-intro {
     margin-left: auto;
@@ -118,7 +132,19 @@
   }
 
   .mandir-partition-image-wrap {
-    order: -1;
+    order: 1;
+  }
+
+  .mandir-partition-body {
+    order: 2;
+  }
+
+  .mandir-partitions.layout-alt .mandir-partition-image-wrap {
+    order: 1;
+  }
+
+  .mandir-partitions.layout-alt .mandir-partition-body {
+    order: 2;
   }
 
   .mandir-partition-title {

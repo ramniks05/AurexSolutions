@@ -46,6 +46,8 @@
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--border);
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .shower-cubicle-image {
@@ -114,6 +116,18 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .shower-cubicle-card {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .shower-cubicles-grid {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .shower-cubicles-intro {
     margin-left: auto;
@@ -133,7 +147,19 @@
   }
 
   .shower-cubicle-image-wrap {
-    order: -1;
+    order: 1;
+  }
+
+  .shower-cubicle-body {
+    order: 2;
+  }
+
+  .shower-cubicles.layout-alt .shower-cubicle-image-wrap {
+    order: 1;
+  }
+
+  .shower-cubicles.layout-alt .shower-cubicle-body {
+    order: 2;
   }
 
   .shower-cubicle-title {
