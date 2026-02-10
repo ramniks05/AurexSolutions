@@ -45,6 +45,7 @@ export default function Preloader({
         <h1 className="preloader-title">
           <span className="preloader-word">Aurex Solutions</span>
         </h1>
+        <div className="preloader-line" aria-hidden />
       </div>
     </div>
   )
