@@ -1,5 +1,9 @@
 .mandir-partitions {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.mandir-partitions.section-alt {
+  background: var(--bg-page);
 }
 
 .mandir-partitions-title.reveal {

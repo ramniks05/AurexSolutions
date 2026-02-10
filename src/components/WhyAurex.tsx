@@ -35,7 +35,7 @@ export default function WhyAurex() {
   const { ref, inView } = useScrollAnimation<HTMLHeadingElement>()
 
   return (
-    <section id="why-aurex" className="why-aurex section">
+    <section id="why-aurex" className="why-aurex section section-alt">
       <h2 className={`section-title why-aurex-title ${inView ? 'reveal' : ''}`} ref={ref}>
         Why Aurex Solutions
       </h2>

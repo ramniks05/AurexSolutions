@@ -1,5 +1,5 @@
 .contact-page {
-  background: var(--bg);
+  background: var(--bg-page);
   min-height: 60vh;
 }
 
@@ -33,6 +33,10 @@
 .contact-main {
   padding-top: 0;
   padding-bottom: 3rem;
+}
+
+.contact-main.section-alt {
+  background: transparent;
 }
 
 .contact-layout {
@@ -127,10 +131,10 @@
   font-family: inherit;
   font-size: 1rem;
   color: var(--text-primary);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--bg-page);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .contact-input::placeholder {
@@ -141,7 +145,7 @@
 .contact-input:focus {
   outline: none;
   border-color: var(--text-primary);
-  box-shadow: 0 0 0 2px rgba(234, 217, 195, 0.2);
+  box-shadow: 0 0 0 3px rgba(14, 58, 63, 0.12);
 }
 
 .contact-textarea {

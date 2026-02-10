@@ -37,7 +37,7 @@ export default function InvisiblePocketDoors({ imageRight }: Props) {
   const { ref, inView } = useScrollAnimation<HTMLHeadingElement>()
 
   return (
-    <section id="invisible-pocket-doors" className={`invisible-pocket-doors section ${imageRight ? 'layout-alt' : ''}`}>
+    <section id="invisible-pocket-doors" className={`invisible-pocket-doors section section-alt ${imageRight ? 'layout-alt' : ''}`}>
       <h2 className={`section-title invisible-pocket-doors-title ${inView ? 'reveal' : ''}`} ref={ref}>
         Invisible/ Pocket Doors
       </h2>

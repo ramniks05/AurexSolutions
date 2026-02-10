@@ -1,5 +1,9 @@
 .telescopic-doors {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.telescopic-doors.section-alt {
+  background: var(--bg-page);
 }
 
 .telescopic-doors-title.reveal {

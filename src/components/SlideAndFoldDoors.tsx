@@ -35,7 +35,7 @@ export default function SlideAndFoldDoors({ imageRight }: Props) {
   const { ref, inView } = useScrollAnimation<HTMLHeadingElement>()
 
   return (
-    <section id="slide-fold-sliding-doors" className={`slide-fold-doors section ${imageRight ? 'layout-alt' : ''}`}>
+    <section id="slide-fold-sliding-doors" className={`slide-fold-doors section section-alt ${imageRight ? 'layout-alt' : ''}`}>
       <h2 className={`section-title slide-fold-doors-title ${inView ? 'reveal' : ''}`} ref={ref}>
         Slide & Fold Sliding Doors
       </h2>

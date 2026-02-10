@@ -4,6 +4,8 @@
   z-index: 100;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .header-inner {
@@ -47,7 +49,8 @@
   color: var(--text-primary);
   font-weight: 600;
   font-size: 0.95rem;
-  transition: color 0.2s;
+  letter-spacing: 0.02em;
+  transition: color 0.25s ease;
 }
 
 .header-nav-link:hover {
@@ -62,7 +65,13 @@
   background: transparent;
   border: 1px solid var(--border);
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.header-menu-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--text-secondary);
 }
 
 .header-menu-icon {
@@ -73,24 +82,26 @@
 
 /* Enquiry button in nav – aligned with links */
 .header-enquiry-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   font-family: inherit;
   font-size: 0.95rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
   line-height: 1.4;
   color: var(--button-text);
   background: var(--button-bg);
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
   cursor: pointer;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: all 0.25s ease;
   display: inline-flex;
   align-items: center;
 }
 
 .header-enquiry-btn:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  border-color: var(--text-secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Enquiry modal overlay – centered form */
@@ -138,9 +149,9 @@
   overflow-y: auto;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
-  animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center;
 }
 
@@ -205,14 +216,19 @@
 
 .header-enquiry-label input,
 .header-enquiry-label textarea {
-  padding: 0.65rem 1rem;
+  padding: 0.75rem 1rem;
   font-family: inherit;
   font-size: 1rem;
   color: var(--text-primary);
-  background: var(--bg);
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  transition: border-color 0.2s;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-enquiry-label input:focus,
+.header-enquiry-label textarea:focus {
+  box-shadow: 0 0 0 2px rgba(234, 217, 195, 0.25);
 }
 
 .header-enquiry-label input::placeholder,

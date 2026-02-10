@@ -1,5 +1,9 @@
 .mission-vision {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.mission-vision.section-alt {
+  background: var(--bg-page);
 }
 
 .mission-vision-title.reveal {
@@ -56,8 +60,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: var(--bg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: var(--bg-page);
+  box-shadow: 0 2px 12px rgba(14, 58, 63, 0.06);
   position: relative;
 }
 
@@ -81,7 +85,7 @@
 .mission-vision-card:hover {
   transform: translateY(-8px) scale(1.02);
   border-color: var(--text-primary);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 32px rgba(14, 58, 63, 0.14);
 }
 
 .mission-vision-card-content {

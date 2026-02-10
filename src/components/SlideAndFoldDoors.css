@@ -1,5 +1,9 @@
 .slide-fold-doors {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.slide-fold-doors.section-alt {
+  background: var(--bg-page);
 }
 
 .slide-fold-doors-title.reveal {

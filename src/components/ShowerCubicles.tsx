@@ -40,7 +40,7 @@ export default function ShowerCubicles({ imageRight }: Props) {
   const { ref, inView } = useScrollAnimation<HTMLHeadingElement>()
 
   return (
-    <section id="shower-cubicles" className={`shower-cubicles section ${imageRight ? 'layout-alt' : ''}`}>
+    <section id="shower-cubicles" className={`shower-cubicles section section-alt ${imageRight ? 'layout-alt' : ''}`}>
       <h2 className={`section-title shower-cubicles-title ${inView ? 'reveal' : ''}`} ref={ref}>
         Shower Cubicles
       </h2>

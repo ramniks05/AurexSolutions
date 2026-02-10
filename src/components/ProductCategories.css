@@ -1,5 +1,9 @@
 .product-categories {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.product-categories.section-alt {
+  background: var(--bg-page);
 }
 
 .product-categories-title.reveal {
@@ -62,8 +66,8 @@
   color: inherit;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-  background: var(--bg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: var(--bg-page);
+  box-shadow: 0 2px 12px rgba(14, 58, 63, 0.06);
   opacity: 0;
   transform: translateY(30px) scale(0.95);
   position: relative;
@@ -101,7 +105,7 @@
 .product-category-card:hover {
   transform: translateY(-8px) scale(1.02);
   border-color: var(--text-primary);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 32px rgba(14, 58, 63, 0.14);
 }
 
 .product-category-image-wrap {
@@ -180,7 +184,7 @@
 .product-category-content {
   position: relative;
   z-index: 2;
-  background: var(--bg);
+  background: var(--bg-page);
 }
 
 .product-category-card-content {
@@ -197,7 +201,7 @@
   height: 2.5rem;
   margin: -1.5rem 2rem 1rem;
   border-radius: 8px;
-  background: var(--bg);
+  background: var(--bg-page);
   color: var(--text-primary);
   flex-shrink: 0;
   position: relative;

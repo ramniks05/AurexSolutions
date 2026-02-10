@@ -23,7 +23,7 @@ export default function MissionVision() {
   const { ref, inView } = useScrollAnimation<HTMLHeadingElement>()
 
   return (
-    <section id="mission-vision" className="mission-vision section">
+    <section id="mission-vision" className="mission-vision section section-alt">
       <h2 className={`section-title mission-vision-title ${inView ? 'reveal' : ''}`} ref={ref}>
         Mission, Vision & Values
       </h2>

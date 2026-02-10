@@ -59,7 +59,7 @@ export default function ContactPage() {
         </p>
       </section>
 
-      <section className="contact-main section">
+      <section className="contact-main section section-alt">
         <div className="contact-layout">
           <div className="contact-form-wrap">
             <h2 className="contact-form-title">Send a message</h2>

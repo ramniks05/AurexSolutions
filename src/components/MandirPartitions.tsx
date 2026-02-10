@@ -35,7 +35,7 @@ export default function MandirPartitions({ imageRight }: Props) {
   const { ref, inView } = useScrollAnimation<HTMLHeadingElement>()
 
   return (
-    <section id="mandir-partitions" className={`mandir-partitions section ${imageRight ? 'layout-alt' : ''}`}>
+    <section id="mandir-partitions" className={`mandir-partitions section section-alt ${imageRight ? 'layout-alt' : ''}`}>
       <h2 className={`section-title mandir-partitions-title ${inView ? 'reveal' : ''}`} ref={ref}>
         Mandir Partitions
       </h2>

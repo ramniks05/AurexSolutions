@@ -1,5 +1,9 @@
 .shower-cubicles {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.shower-cubicles.section-alt {
+  background: var(--bg-page);
 }
 
 .shower-cubicles-title.reveal {

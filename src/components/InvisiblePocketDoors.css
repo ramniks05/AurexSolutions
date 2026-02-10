@@ -1,5 +1,9 @@
 .invisible-pocket-doors {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.invisible-pocket-doors.section-alt {
+  background: var(--bg-page);
 }
 
 .invisible-pocket-doors-title.reveal {

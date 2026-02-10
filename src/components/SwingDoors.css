@@ -1,5 +1,9 @@
 .swing-doors {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.swing-doors.section-alt {
+  background: var(--bg-page);
 }
 
 .swing-doors-title.reveal {

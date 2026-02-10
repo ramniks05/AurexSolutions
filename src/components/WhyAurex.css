@@ -1,5 +1,9 @@
 .why-aurex {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.why-aurex.section-alt {
+  background: var(--bg-page);
 }
 
 .why-aurex-title.reveal {
@@ -68,8 +72,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background: var(--bg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: var(--bg-page);
+  box-shadow: 0 2px 12px rgba(14, 58, 63, 0.06);
 }
 
 .why-aurex-card::before {
@@ -91,7 +95,7 @@
 
 .why-aurex-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 32px rgba(14, 58, 63, 0.14);
   border-color: var(--text-primary);
 }
 

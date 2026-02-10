@@ -106,7 +106,7 @@ export default function ProductCategories() {
   }, [])
 
   return (
-    <section id="products" className="product-categories section">
+    <section id="products" className="product-categories section section-alt">
       <h2 className={`section-title product-categories-title ${inView ? 'reveal' : ''}`} ref={ref}>
         Product Categories
       </h2>

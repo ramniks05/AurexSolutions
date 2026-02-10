@@ -1,5 +1,9 @@
 .synchro-sliding-doors {
-  background: var(--bg);
+  background: var(--bg-page);
+}
+
+.synchro-sliding-doors.section-alt {
+  background: var(--bg-page);
 }
 
 .synchro-sliding-doors-title.reveal {
