@@ -1,10 +1,10 @@
 import { createContext, useContext, useLayoutEffect, useCallback, useMemo, useState } from 'react'
 
 export const DEFAULT_THEME = {
-  primary: '#0E3A3F',
-  accent: '#E3C09B',
-  pageBg: '#F8F6F2',
-  textOnDark: '#EAD9C3',
+  primary: '#0d282b',
+  accent: '#eed7be',
+  pageBg: '#fbebcb',
+  textOnDark: '#eed7be',
 } as const
 
 export type ThemeColors = {

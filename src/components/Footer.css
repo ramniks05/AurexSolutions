@@ -88,26 +88,15 @@
   display: inline-block;
   margin-bottom: 1rem;
   text-decoration: none;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.9;
 }
 
-.footer-logo:hover {
-  transform: translateY(-2px);
-  opacity: 1;
-}
 
 .footer-logo-img {
   height: auto;
   max-width: 150px;
   width: 100%;
   object-fit: contain;
-  transition: filter 0.3s ease;
-  filter: brightness(0.95);
-}
-
-.footer-logo:hover .footer-logo-img {
-  filter: brightness(1);
+  /* Fixed color – no filter or transition so logo always shows original */
 }
 
 .footer-about-text {

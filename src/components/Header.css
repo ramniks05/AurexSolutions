@@ -26,6 +26,7 @@
   flex-shrink: 0;
 }
 
+/* Logo always shows original color – no hover or filter change */
 .header-logo-img {
   height: 48px;
   width: auto;

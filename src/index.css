@@ -1,25 +1,25 @@
-/* Aurex Solutions theme – gold on teal only. Do NOT use #FFFFFF. */
+/* Aurex Solutions theme – client colors. Do NOT use #FFFFFF. */
 :root {
-  --bg: #0E3A3F;
-  --bg-alt: #123d43;
-  --bg-page: #F8F6F2; /* light background – warm off-white, matches with white */
-  --text-primary: #EAD9C3;
-  --text-secondary: #F2E6D6;
-  --button-bg: #EAD9C3;
-  --button-text: #0E3A3F;
-  --accent: #E3C09B; /* second color – warm gold/tan accent */
-  --border: #1A4E54;
-  /* Text on light background – teal shades for readability */
-  --text-on-light: #0E3A3F;
-  --text-on-light-muted: #1A4E54;
-  --border-on-light: #2d6b73;
+  --bg: #0d282b;
+  --bg-alt: #0f2e32;
+  --bg-page: #fbebcb;
+  --text-primary: #eed7be;
+  --text-secondary: #f2e2ce;
+  --button-bg: #eed7be;
+  --button-text: #0d282b;
+  --accent: #eed7be;
+  --border: #143238;
+  /* Text on light background */
+  --text-on-light: #0d282b;
+  --text-on-light-muted: #1a3d42;
+  --border-on-light: #255057;
   /* Design tokens – consistent radius, shadow, motion */
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
-  --shadow-sm: 0 2px 8px rgba(14, 58, 63, 0.06);
-  --shadow-md: 0 8px 24px rgba(14, 58, 63, 0.1);
-  --shadow-lg: 0 16px 40px rgba(14, 58, 63, 0.12);
+  --shadow-sm: 0 2px 8px rgba(13, 40, 43, 0.06);
+  --shadow-md: 0 8px 24px rgba(13, 40, 43, 0.1);
+  --shadow-lg: 0 16px 40px rgba(13, 40, 43, 0.12);
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
