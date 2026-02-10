@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { ThemeProvider } from './contexts/ThemeContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Preloader from './components/Preloader'
 import ScrollToTop from './components/ScrollToTop'
 import BackToTop from './components/BackToTop'
+import ThemeCustomizer from './components/ThemeCustomizer'
 import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
 import ContactPage from './pages/ContactPage'
@@ -21,7 +23,7 @@ function App() {
   }, [])
 
   return (
-    <>
+    <ThemeProvider>
       <ScrollToTop />
       {preloaderMounted && (
         <Preloader
@@ -37,7 +39,8 @@ function App() {
       </Routes>
       <Footer />
       <BackToTop />
-    </>
+      <ThemeCustomizer />
+    </ThemeProvider>
   )
 }
 
