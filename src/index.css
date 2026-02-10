@@ -7,6 +7,7 @@
   --text-secondary: #F2E6D6;
   --button-bg: #EAD9C3;
   --button-text: #0E3A3F;
+  --accent: #E3C09B; /* second color – warm gold/tan accent */
   --border: #1A4E54;
   /* Text on light background – teal shades for readability */
   --text-on-light: #0E3A3F;
@@ -56,7 +57,7 @@ a {
 }
 
 a:hover {
-  color: var(--bg);
+  color: var(--accent);
 }
 
 a:focus-visible {
@@ -116,7 +117,7 @@ body {
   transform: translateX(-50%);
   width: 48px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, var(--border-on-light), transparent);
+  background: linear-gradient(90deg, transparent, var(--accent), var(--border-on-light), transparent);
   border-radius: 2px;
 }
 
@@ -145,7 +146,8 @@ body {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-  border-color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .btn-primary:focus-visible {
