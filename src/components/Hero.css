@@ -14,20 +14,7 @@
 }
 
 .hero-banner-placeholder {
-  background: linear-gradient(
-    135deg,
-    var(--bg) 0%,
-    var(--bg-alt) 40%,
-    var(--border) 70%,
-    var(--bg) 100%
-  );
-  background-size: 400% 400%;
-  animation: placeholderShift 12s ease infinite;
-}
-
-@keyframes placeholderShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  background: var(--bg);
 }
 
 .hero-banner-img {
@@ -44,9 +31,7 @@
 .hero-banner-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(to bottom, rgba(14, 58, 63, 0.45) 0%, transparent 35%, transparent 55%, rgba(14, 58, 63, 0.7) 100%),
-    linear-gradient(to right, rgba(14, 58, 63, 0.2) 0%, transparent 20%, transparent 80%, rgba(14, 58, 63, 0.2) 100%);
+  background: transparent;
   pointer-events: none;
 }
 
@@ -97,10 +82,6 @@
   margin: 0 0 1rem;
   color: var(--text-primary);
   letter-spacing: 0.02em;
-  text-shadow:
-    0 2px 4px rgba(14, 58, 63, 0.4),
-    0 4px 20px rgba(14, 58, 63, 0.35),
-    0 0 40px rgba(14, 58, 63, 0.2);
   animation: heroFadeInUp 0.9s cubic-bezier(0.4, 0, 0.2, 1) 0.15s backwards;
 }
 
@@ -111,9 +92,6 @@
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.01em;
-  text-shadow:
-    0 1px 3px rgba(14, 58, 63, 0.5),
-    0 2px 12px rgba(14, 58, 63, 0.35);
   animation: heroFadeInUp 0.9s cubic-bezier(0.4, 0, 0.2, 1) 0.35s backwards;
 }
 
@@ -123,16 +101,14 @@
   border-radius: 8px;
   font-weight: 600;
   letter-spacing: 0.02em;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--text-secondary);
   animation: heroFadeInUp 0.9s cubic-bezier(0.4, 0, 0.2, 1) 0.55s backwards;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 .hero-cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
-  border-color: var(--text-secondary);
+  transform: translateY(-2px);
+  border-color: var(--text-primary);
 }
 
 .hero-banner-img {

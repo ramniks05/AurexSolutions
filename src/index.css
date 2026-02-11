@@ -2,7 +2,7 @@
 :root {
   --bg: #0d282b;
   --bg-alt: #0f2e32;
-  --bg-page: #F8F6F2;
+  --bg-page: #fbebcb;
   --text-primary: #eed7be;
   --text-secondary: #f2e2ce;
   --button-bg: #eed7be;
@@ -85,7 +85,6 @@ body {
   background-color: var(--bg-page);
   color: var(--text-on-light);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
   /* So components using var(--text-primary) / var(--text-secondary) stay readable */
   --text-primary: var(--text-on-light);
   --text-secondary: var(--text-on-light-muted);
