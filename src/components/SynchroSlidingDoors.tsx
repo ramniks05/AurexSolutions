@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FrameColourSwatches from './FrameColourSwatches'
+import ProductImageWithLightbox from './ProductImageWithLightbox'
 import './SynchroSlidingDoors.css'
 
 const products = [
@@ -46,10 +47,10 @@ export default function SynchroSlidingDoors({ imageRight }: Props) {
         {products.map((product) => (
           <article key={product.id} className="synchro-door-card">
             <div className="synchro-door-image-wrap">
-              <img
+              <ProductImageWithLightbox
                 src={product.image}
                 alt={product.title}
-                className="synchro-door-image"
+                imageClassName="synchro-door-image"
               />
             </div>
             <div className="synchro-door-body">

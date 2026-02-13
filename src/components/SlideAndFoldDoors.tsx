@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FrameColourSwatches from './FrameColourSwatches'
+import ProductImageWithLightbox from './ProductImageWithLightbox'
 import './SlideAndFoldDoors.css'
 
 const products = [
@@ -46,10 +47,10 @@ export default function SlideAndFoldDoors({ imageRight }: Props) {
         {products.map((product) => (
           <article key={product.id} className="slide-fold-door-card">
             <div className="slide-fold-door-image-wrap">
-              <img
+              <ProductImageWithLightbox
                 src={product.image}
                 alt={product.title}
-                className="slide-fold-door-image"
+                imageClassName="slide-fold-door-image"
               />
             </div>
             <div className="slide-fold-door-body">

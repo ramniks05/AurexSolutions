@@ -3,7 +3,7 @@ import { createContext, useContext, useLayoutEffect, useCallback, useMemo, useSt
 export const DEFAULT_THEME = {
   primary: '#0d282b',
   accent: '#eed7be',
-  pageBg: '#fbebcb',
+  pageBg: '#FEFDFB',
   textOnDark: '#eed7be',
 } as const
 

@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FrameColourSwatches from './FrameColourSwatches'
+import ProductImageWithLightbox from './ProductImageWithLightbox'
 import './ShowerCubicles.css'
 
 const tiers = [
@@ -51,10 +52,10 @@ export default function ShowerCubicles({ imageRight }: Props) {
         {tiers.map((tier) => (
           <article key={tier.id} className="shower-cubicle-card">
             <div className="shower-cubicle-image-wrap">
-              <img
+              <ProductImageWithLightbox
                 src={tier.image}
                 alt={tier.title}
-                className="shower-cubicle-image"
+                imageClassName="shower-cubicle-image"
               />
             </div>
             <div className="shower-cubicle-body">

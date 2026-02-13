@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FrameColourSwatches from './FrameColourSwatches'
+import ProductImageWithLightbox from './ProductImageWithLightbox'
 import './InvisiblePocketDoors.css'
 
 const products = [
@@ -48,10 +49,10 @@ export default function InvisiblePocketDoors({ imageRight }: Props) {
         {products.map((product) => (
           <article key={product.id} className="pocket-door-card">
             <div className="pocket-door-image-wrap">
-              <img
+              <ProductImageWithLightbox
                 src={product.image}
                 alt={product.title}
-                className="pocket-door-image"
+                imageClassName="pocket-door-image"
               />
             </div>
             <div className="pocket-door-body">

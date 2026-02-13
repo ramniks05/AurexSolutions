@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FrameColourSwatches from './FrameColourSwatches'
+import ProductImageWithLightbox from './ProductImageWithLightbox'
 import './TelescopicDoors.css'
 
 const products = [
@@ -46,10 +47,10 @@ export default function TelescopicDoors({ imageRight }: Props) {
         {products.map((product) => (
           <article key={product.id} className="telescopic-door-card">
             <div className="telescopic-door-image-wrap">
-              <img
+              <ProductImageWithLightbox
                 src={product.image}
                 alt={product.title}
-                className="telescopic-door-image"
+                imageClassName="telescopic-door-image"
               />
             </div>
             <div className="telescopic-door-body">

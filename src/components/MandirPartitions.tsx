@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FrameColourSwatches from './FrameColourSwatches'
+import ProductImageWithLightbox from './ProductImageWithLightbox'
 import './MandirPartitions.css'
 
 const products = [
@@ -46,10 +47,10 @@ export default function MandirPartitions({ imageRight }: Props) {
         {products.map((product) => (
           <article key={product.id} className="mandir-partition-card">
             <div className="mandir-partition-image-wrap">
-              <img
+              <ProductImageWithLightbox
                 src={product.image}
                 alt={product.title}
-                className="mandir-partition-image"
+                imageClassName="mandir-partition-image"
               />
             </div>
             <div className="mandir-partition-body">

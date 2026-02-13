@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FrameColourSwatches from './FrameColourSwatches'
+import ProductImageWithLightbox from './ProductImageWithLightbox'
 import './SwingDoors.css'
 
 const products = [
@@ -44,10 +45,10 @@ export default function SwingDoors({ imageRight }: Props) {
         {products.map((product) => (
           <article key={product.id} className="swing-door-card">
             <div className="swing-door-image-wrap">
-              <img
+              <ProductImageWithLightbox
                 src={product.image}
                 alt={product.title}
-                className="swing-door-image"
+                imageClassName="swing-door-image"
               />
             </div>
             <div className="swing-door-body">
