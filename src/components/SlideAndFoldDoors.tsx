@@ -9,15 +9,15 @@ const products = [
     title: 'Economical Slide & Fold Doors',
     image: '/slide-fold-economical.png',
     glass: ['Clear', 'Frosted', 'Tinted'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Brush Gold', 'Graphite Grey', 'Rose Gold'],
-    extra: 'Anodised aluminium slide and fold system with clear toughened glass panels. Panels slide smoothly and fold to one side, creating a wide opening. Simple and functional hardware.',
+    frame: ['Champagne', 'Black', 'Bronze', 'Brush Gold', 'Grey'],
+    extra: 'Anodised aluminium slide and fold system with clear toughened glass panels. Panels slide smoothly and fold to one side, creating a wide opening.',
   },
   {
     id: 'premium-slide-fold',
     title: 'Premium Slide & Fold Doors',
     image: '/slide-fold-premium.png',
     glass: ['Fluted', 'Tinted', 'Designer'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Rose Gold', 'Brush Gold'],
+    frame: ['Champagne', 'Black', 'Bronze', 'Grey', 'Brush Gold'],
     extra: 'Anodised aluminium framed slide and fold system with smooth folding and sliding. Different glasses can be used, along with designs created using Georgian bars and various glass patterns.',
   },
   {
@@ -25,8 +25,8 @@ const products = [
     title: 'Super Premium Slide & Fold Doors',
     image: '/slide-fold-super-premium.png',
     glass: ['Fluted', 'Fabric', 'Designer', '5D glasses'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Rose Gold', 'Brush Gold'],
-    extra: 'Anodised aluminium full-framed slide and fold system with concealed mechanism. Multiple glass options can be used in a single panel. Divider profiles and various glass shapes and types can be incorporated. Multiple design styles, such as Curved, French grid, and Geometrical patterns, can be created.',
+    frame: ['Champagne', 'Black', 'Bronze', 'Grey', 'Brush Gold'],
+    extra: 'Anodised aluminium full-framed slide and fold system with concealed mechanism. Divider profiles and various glass shapes and types can be incorporated. Multiple design styles, such as Curved, French grid, and Geometrical patterns, can be created.',
   },
 ]
 

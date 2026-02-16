@@ -9,7 +9,7 @@ const products = [
     title: 'Economical Mandir Partition',
     image: '/mandir-economical.png',
     glass: ['Clear', 'Frosted', 'Tinted'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Brush Gold', 'Graphite Grey', 'Rose Gold'],
+    frame: ['Champagne', 'Black', 'Bronze', 'Brush Gold', 'Grey'],
     extra: 'Anodised aluminium partition door & sliding system with clear toughened glass & minimal frame.',
   },
   {
@@ -17,7 +17,7 @@ const products = [
     title: 'Premium Mandir Partition',
     image: '/mandir-premium.png',
     glass: ['Fluted', 'Tinted', 'Designer'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Rose Gold', 'Brush Gold'],
+    frame: ['Champagne', 'Black', 'Bronze', 'Grey', 'Brush Gold'],
     extra: 'Anodised aluminium-framed doors & sliding with different glasses & a hint of bells along with a design created using Georgian bars and various glass patterns.',
   },
   {
@@ -25,8 +25,8 @@ const products = [
     title: 'Super Premium Mandir Partition',
     image: '/mandir-super-premium.png',
     glass: ['Fluted', 'Tinted', 'Designer', '5D glasses'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Rose Gold', 'Brush Gold'],
-    extra: 'Anodised Aluminium full-frame sliding & door system with concealed & soft close mechanisms. Multiple glass options can be used with a hint of bells in a single panel. Divider profiles and various glass shapes and types can be incorporated. Different design styles, such as Curved, French grid, and Geometrical patterns, can be created.',
+    frame: ['Champagne', 'Black', 'Bronze', 'Grey', 'Brush Gold'],
+    extra: 'Anodised Aluminium full-frame sliding & door system with concealed & soft close mechanisms. a hint of bells in a single panel. Divider profiles and various glass shapes and types can be incorporated. Different design styles, such as Curved, French grid, and Geometrical patterns, can be created.',
   },
 ]
 

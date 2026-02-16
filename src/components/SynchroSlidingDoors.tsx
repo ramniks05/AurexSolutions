@@ -9,15 +9,15 @@ const products = [
     title: 'Economical Synchro Slider',
     image: '/synchro-economical.png',
     glass: ['Clear', 'Frosted', 'Tinted'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Brush Gold', 'Graphite Grey', 'Rose Gold'],
-    extra: 'Anodised aluminium synchro sliding system where both panels move together smoothly. Comes with clear toughened glass and a slim, minimal frame.',
+    frame: ['Champagne', 'Black', 'Bronze', 'Brush Gold', 'Grey'],
+    extra: 'Anodised aluminium synchro sliding system where both panels move together smoothly. Comes with clear toughened glass and a slim, minimal frame',
   },
   {
     id: 'premium-synchro',
     title: 'Premium Synchro Slider',
     image: '/synchro-premium.png',
     glass: ['Fluted', 'Tinted', 'Designer'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Rose Gold', 'Brush Gold'],
+    frame: ['Champagne', 'Black', 'Bronze', 'Grey', 'Brush Gold'],
     extra: 'Anodised aluminium synchro sliding door with a slim frame and soft close mechanism. Different glasses can be used, along with designs created using Georgian bars and various glass patterns.',
   },
   {
@@ -25,8 +25,8 @@ const products = [
     title: 'Super Premium Synchro Slider',
     image: '/synchro-super-premium.png',
     glass: ['Fluted', 'Tinted', 'Designer', '5D glasses'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Rose Gold', 'Brush Gold'],
-    extra: 'Anodised aluminium synchro slider with concealed & soft close mechanism. Multiple glass options can be used in a single panel. Divider profiles and various glass shapes and types can be incorporated. Different design styles, such as Curved, French grid, and Geometrical patterns, can be created.',
+    frame: ['Champagne', 'Black', 'Bronze', 'Grey', 'Brush Gold'],
+    extra: 'Anodised aluminium synchro slider with concealed & soft close mechanism. Divider profiles and various glass shapes and types can be incorporated. Different design styles, such as Curved, French grid, and Geometrical patterns, can be created.',
   },
 ]
 

@@ -6,27 +6,31 @@ import './InvisiblePocketDoors.css'
 const products = [
   {
     id: 'economical-pocket-door',
-    title: 'Economical Pocket Doors',
+    title: 'Economical invisible doors',
     image: '/pocket-door-economical.png',
     glass: ['Clear', 'Frosted', 'Tinted'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Brush Gold', 'Graphite Grey', 'Rose Gold'],
+    frame: ['Champagne', 'Black', 'Bronze', 'Brush Gold', 'Grey'],
+    extra: [
+      'Sliding glass door system with minimal hardware, featuring a top sliding aluminium track and 8 mm toughened clear glass.',
+    ],
   },
   {
     id: 'premium-pocket-door',
-    title: 'Premium Pocket Doors',
+    title: 'Premium invisible Doors',
     image: '/pocket-door-premium.png',
     glass: ['Fluted', 'Tinted', 'Designer'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Rose Gold'],
+    frame: ['Champagne', 'Black', 'Brush Gold', 'Bronze', 'Grey'],
+    extra: [
+      'Anodised aluminium outer frame with different glass and handle options can be used, along with designs created using Georgian bars and various glass patterns.',
+    ],
   },
   {
     id: 'super-premium-pocket-door',
     title: 'Super Premium Pocket Doors',
     image: '/pocket-door-super-premium.png',
     glass: ['Fluted', 'Fabric', 'Designer'],
-    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Rose Gold', 'Brush Gold'],
+    frame: ['Champagne', 'Black', 'Bronze', 'Graphite Grey', 'Brush Gold'],
     extra: [
-      'Sliding glass door system with minimal hardware, featuring a top sliding aluminium track and 8 mm toughened clear glass.',
-      'Anodised aluminium outer frame with different glass and handle options can be used, along with designs created using Georgian bars and various glass patterns.',
       'Anodised aluminium full-frame sliding doors with a concealed sliding & soft close mechanism. Multiple glass options can be used. Divider profiles and various glass shapes & types can be incorporated. Different design styles, such as Curved, French grid, & Geometrical patterns, can be created.',
     ],
   },

@@ -11,26 +11,30 @@ const tiers = [
     glass: ['Clear', 'Frosted'],
     frame: ['Black', 'SS', 'Gold'],
     addons: 'Nano coating Glass Add-ons',
+    extra: [
+      "Patch fitting with frameless Door. Comes with Visible 'L' connector, glass-to-glass Hinge & top rod with 10mm Clear toughened glass.",
+    ],
   },
   {
     id: 'premium',
     title: 'Premium Shower Cubicle',
     image: '/shower-premium.png',
     glass: ['Fluted', 'Tinted', 'Designer'],
-    frame: ['Champagne', 'Brush Gold', 'Black', 'Rosegold', 'Bronze', 'Graphite Grey'],
+    frame: ['Champagne', 'Brush Gold', 'Black', 'Bronze', 'Grey'],
     addons: 'Nano coating Glass Add-ons',
+    extra: [
+      'Anodised Aluminium outer frames with frameless doors, visible Hinges, Different type of glass can be used.',
+    ],
   },
   {
     id: 'super-premium',
     title: 'Super Premium Shower Cubicle',
     image: '/shower-super-premium.png',
     glass: ['Fluted', 'Fabric', 'Designer'],
-    frame: ['Champagne', 'Brush Gold', 'Black', 'Rosegold', 'Bronze', 'Graphite Grey'],
+    frame: ['Champagne', 'Brush Gold', 'Black', 'Bronze', 'Grey'],
     addons: 'Nano coating Glass Add-ons',
     extra: [
-      "Patch fitting or 'U' channel fitting with Frameless Door. Comes with Visible 'L' connector, glass-to-glass Hinge & top rod with 10mm Clear toughened glass.",
-      'Anodised Aluminium outer frames with frameless doors, visible Hinges. Different type of glass can be used.',
-      'Anodised Aluminium outer frames with fully framed door & concealed hinges, multiple glass can be used in single panel—Fluted, Fabric, designer glass. Curved, french, any geometrical patterns.',
+      'Anodised Aluminium outer frames with fully framed door & concealed hinges, multiple glass can be used in single panel. Fluted glass, Fabric glass, designer glass. Different kind of design can be done curved , french, any geometrical patterns',
     ],
   },
 ]

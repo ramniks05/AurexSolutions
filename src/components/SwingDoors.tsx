@@ -10,21 +10,23 @@ const products = [
     image: '/swing-door-economical.png',
     glass: ['Clear', 'Frosted', 'Tinted'],
     frame: ['Black', 'SS', 'Gold'],
+    extra: "Frameless Glasses with fitiings on all edges, basic 'H' handle.",
   },
   {
     id: 'premium-swing-door',
     title: 'Premium Swing Door',
     image: '/swing-door-premium.png',
     glass: ['Fluted', 'Tinted', 'Designer'],
-    frame: ['Champagne', 'Brush Gold', 'Black', 'Rosegold', 'Bronze', 'Graphite Grey', 'Rose Gold'],
+    frame: ['Champagne', 'Brush Gold', 'Black', 'Bronze', 'Grey'],
+    extra: 'Framed Anodised aluminium Doors, Locking System (optional), Multiple handle options, Designs with Georgian Bar.',
   },
   {
     id: 'fully-framed-door',
-    title: 'Fully Framed Anodised Aluminium Door',
+    title: 'Super Premium Swing Door',
     image: '/swing-door-fully-framed.png',
     glass: ['Fluted', 'Fabric', 'Designer', '5D glasses'],
-    frame: ['Champagne', 'Brush Gold', 'Black', 'Rosegold', 'Bronze', 'Graphite Grey'],
-    extra: "Fully framed anodised aluminium doors with multiple glasses—Fabric, designer 5D glasses. Use of Divider Profiles for various shapes and types of glass can be incorporated. Handle options: Curved handle, 'H' handle, mortised handle, sleek long handle with locking system.",
+    frame: ['Champagne', 'Brush Gold', 'Black', 'Bronze', 'Grey'],
+    extra: "Fully framed anodised aluminium doors with multiple glasses. Multiple handle options- Curved handle, 'H' handle, mortised handle, sleek handle, long handle with locking system.",
   },
 ]
 
