@@ -136,7 +136,7 @@
 }
 
 .why-aurex-card:hover .why-aurex-icon-wrap {
-  background: var(--text-primary);
+  background: #eed7be;
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 8px 24px rgba(14, 58, 63, 0.3);
 }
@@ -145,13 +145,17 @@
   width: 2.5rem;
   height: 2.5rem;
   color: var(--text-primary);
+  stroke: currentColor;
+  fill: none;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 1;
 }
 
 .why-aurex-card:hover .why-aurex-icon {
-  color: var(--bg);
+  color: #0d282b !important;
+  stroke: #0d282b !important;
+  fill: none;
   transform: scale(1.1);
 }
 

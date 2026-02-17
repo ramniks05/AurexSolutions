@@ -5,12 +5,12 @@ const blocks = [
   {
     id: 'mission',
     title: 'Our Mission',
-    text: 'To deliver premium glass and partition solutions that enhance spaces—from residential to commercial—with quality, reliability, and clear communication at every step.',
+    text: 'To deliver premium aluminium glass and partition solutions that enhance spaces—from residential to commercial—with quality, reliability, and clear communication at every step.',
   },
   {
     id: 'vision',
     title: 'Our Vision',
-    text: 'To be the trusted partner for architects, builders, and homeowners seeking exceptional glazing and partitioning solutions across India and beyond.',
+    text: 'To be the trusted partner for architects, builders, and homeowners seeking exceptional aluminium glass and partitioning solutions across India and beyond.',
   },
   {
     id: 'values',

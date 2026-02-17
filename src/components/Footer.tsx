@@ -27,7 +27,7 @@ const socialLinks = [
 ]
 
 const contactInfo = {
-  address: 'Aurex Solutions\nYour address here\nCity, State – PIN',
+  address: 'Aurex Solutions\nKhewat No 895, Khata No 909, Badshahpur,\nSector-68, Gurugram. State: Haryana, Pin code: 122101',
   phone: '+91 98765 43210',
   phoneHref: 'tel:+919876543210',
   email: 'hello@aurex.com',

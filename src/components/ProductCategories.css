@@ -211,12 +211,23 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.product-category-icon svg {
+  color: inherit;
+  stroke: currentColor;
+}
+
 .product-category-card:hover .product-category-icon {
-  background: var(--text-primary);
-  color: var(--bg);
-  border-color: var(--text-primary);
+  background: #eed7be;
+  color: #0d282b;
+  border-color: #eed7be;
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-category-card:hover .product-category-icon svg {
+  color: #0d282b !important;
+  stroke: #0d282b !important;
+  fill: none;
 }
 
 .product-category-title {

@@ -21,6 +21,9 @@
   --shadow-md: 0 8px 24px rgba(13, 40, 43, 0.1);
   --shadow-lg: 0 16px 40px rgba(13, 40, 43, 0.12);
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Section spacing */
+  --section-gap: 4rem;
+  --section-gap-mobile: 3rem;
 }
 
 *,
@@ -85,7 +88,7 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
+  margin-bottom: var(--section-gap);
   padding: 4rem 1.5rem;
   width: 100%;
   background-color: var(--bg-page);
@@ -98,8 +101,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  .section {
+  .section,
+  .section-alt {
     padding: 2.5rem 1rem;
+    margin-bottom: var(--section-gap-mobile);
     box-sizing: border-box;
   }
 }
