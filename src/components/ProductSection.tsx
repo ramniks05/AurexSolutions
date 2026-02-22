@@ -12,7 +12,7 @@ export default function ProductSection() {
   return (
     <section className="product-section section">
       <h2 className={`section-title product-section-title ${inView ? 'reveal' : ''}`} ref={ref}>
-        Our Products
+        Aurex Solutions Products
       </h2>
       <div className="product-section-grid">
         {products.map((product) => (

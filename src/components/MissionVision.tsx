@@ -4,18 +4,18 @@ import './MissionVision.css'
 const blocks = [
   {
     id: 'mission',
-    title: 'Our Mission',
-    text: 'To deliver premium aluminium glass and partition solutions that enhance spaces—from residential to commercial—with quality, reliability, and clear communication at every step.',
+    title: 'Aurex Solutions Mission',
+    text: 'Aurex Solutions delivers premium aluminium glass and partition solutions that enhance spaces—from residential to commercial—with quality, reliability, and clear communication at every step.',
   },
   {
     id: 'vision',
-    title: 'Our Vision',
-    text: 'To be the trusted partner for architects, builders, and homeowners seeking exceptional aluminium glass and partitioning solutions across India and beyond.',
+    title: 'Aurex Solutions Vision',
+    text: 'Aurex Solutions aims to be the trusted partner for architects, builders, and homeowners seeking exceptional aluminium glass and partitioning solutions across India and beyond.',
   },
   {
     id: 'values',
-    title: 'Our Values',
-    text: 'Quality in materials and craftsmanship, integrity in every interaction, and a commitment to understanding and meeting our clients\' needs.',
+    title: 'Aurex Solutions Values',
+    text: 'Quality in materials and craftsmanship, integrity in every interaction, and a commitment to understanding and meeting clients\' needs.',
   },
 ]
 

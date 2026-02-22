@@ -50,7 +50,7 @@ export default function ShowerCubicles({ imageRight }: Props) {
         Shower Cubicles
       </h2>
       <p className="shower-cubicles-intro">
-        Our shower cubicle range from economical to super premium—each with glass and frame options to match your space.
+        Aurex Solutions shower cubicle range from economical to super premium—each with glass and frame options to match your space.
       </p>
       <div className="shower-cubicles-grid">
         {tiers.map((tier) => (

@@ -23,9 +23,9 @@ export default function ProductsPage() {
   return (
     <main className="products-page">
       <div className="products-page-intro section">
-        <h1 className="products-page-title">Our Products</h1>
+        <h1 className="products-page-title">Aurex Solutions Products</h1>
         <p className="products-page-lead">
-          Explore our product ranges. Select a category below or use the links from the home page.
+          Explore Aurex Solutions product ranges. Select a category below or use the links from the home page.
         </p>
       </div>
       <ShowerCubicles />

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Linkedin, Twitter, Youtube, Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin } from 'lucide-react'
 import './Footer.css'
 
 const footerLinks = [
@@ -18,20 +18,15 @@ const productLinks = [
   { to: '/products#mandir-partitions', label: 'Mandir Partitions' },
 ]
 
-const socialLinks = [
-  { label: 'Facebook', href: 'https://facebook.com', icon: Facebook },
-  { label: 'Instagram', href: 'https://instagram.com', icon: Instagram },
-  { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { label: 'Twitter', href: 'https://twitter.com', icon: Twitter },
-  { label: 'YouTube', href: 'https://youtube.com', icon: Youtube },
-]
+/* Temporarily empty – add links when social accounts are ready */
+const socialLinks: { label: string; href: string; icon: React.ComponentType<{ size?: number; strokeWidth?: number }> }[] = []
 
 const contactInfo = {
-  address: 'Aurex Solutions\nKhewat No 895, Khata No 909, Badshahpur,\nSector-68, Gurugram. State: Haryana, Pin code: 122101',
-  phone: '+91 98765 43210',
-  phoneHref: 'tel:+919876543210',
-  email: 'hello@aurex.com',
-  emailHref: 'mailto:hello@aurex.com',
+  address: 'Aurex Solutions, Khewat No 895, Khata No 909, Badshahpur, Sector-68, Gurugram, Haryana 122101',
+  phone: '74282 65177',
+  phoneHref: 'tel:+917428265177',
+  email: 'Info@aurexsolutions.in',
+  emailHref: 'mailto:Info@aurexsolutions.in',
 }
 
 /* Replace with your Google Maps embed URL: Google Maps → Share → Embed a map */
@@ -49,26 +44,28 @@ export default function Footer() {
               <img src="/logo.jpeg" alt="Aurex Solutions" className="footer-logo-img" />
             </Link>
             <p className="footer-about-text">
-              Leading provider of premium glass solutions including shower cubicles, sliding doors, partitions, and more. 
-              We offer economical to super premium options with various glass and frame choices.
+              Aurex Solutions is a leading provider of premium aluminium glass solutions including shower cubicles, sliding doors, partitions, and more. 
+              Aurex Solutions offers economical to super premium options with various aluminium glass and frame choices.
             </p>
-            <div className="footer-social">
-              <span className="footer-social-label">Follow us</span>
-              <div className="footer-social-icons">
-                {socialLinks.map(({ label, href, icon: Icon }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    className="footer-social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                  >
-                    <Icon size={20} strokeWidth={1.75} />
-                  </a>
-                ))}
+            {socialLinks.length > 0 && (
+              <div className="footer-social">
+                <span className="footer-social-label">Follow us</span>
+                <div className="footer-social-icons">
+                  {socialLinks.map(({ label, href, icon: Icon }) => (
+                    <a
+                      key={label}
+                      href={href}
+                      className="footer-social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                    >
+                      <Icon size={20} strokeWidth={1.75} />
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           <div className="footer-section footer-links">
@@ -83,7 +80,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-section footer-products">
-            <h3 className="footer-section-title">Our Products</h3>
+            <h3 className="footer-section-title">Aurex Solutions Products</h3>
             <nav className="footer-nav">
               {productLinks.map((link) => (
                 <Link key={link.to} to={link.to} className="footer-nav-link">

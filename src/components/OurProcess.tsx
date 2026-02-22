@@ -1,22 +1,38 @@
+import { useRef, useEffect, useState } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './OurProcess.css'
 
 const steps = [
-  { num: 1, title: 'Consultation', text: 'We understand your requirements and vision.' },
+  { num: 1, title: 'Consultation', text: 'Aurex Solutions understands your requirements and vision.' },
   { num: 2, title: 'Planning', text: 'A tailored plan and timeline are prepared.' },
   { num: 3, title: 'Execution', text: 'Expert delivery with quality at every stage.' },
   { num: 4, title: 'Handover', text: 'Final review and ongoing support as needed.' },
 ]
 
 export default function OurProcess() {
-  const { ref, inView } = useScrollAnimation<HTMLHeadingElement>()
+  const sectionRef = useRef<HTMLElement>(null)
+  const { ref: titleRef, inView } = useScrollAnimation<HTMLHeadingElement>(0.12)
+  const [layoutInView, setLayoutInView] = useState(false)
+
+  useEffect(() => {
+    const el = sectionRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setLayoutInView(true)
+      },
+      { threshold: 0.2 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <section id="process" className="our-process section">
-      <h2 className={`section-title our-process-title ${inView ? 'reveal' : ''}`} ref={ref}>
-        Our Process
+    <section id="process" className="our-process section" ref={sectionRef}>
+      <h2 className={`section-title our-process-title ${inView ? 'reveal' : ''}`} ref={titleRef}>
+        Aurex Solutions Process
       </h2>
-      <div className="our-process-layout">
+      <div className={`our-process-layout ${layoutInView ? 'our-process-layout-inview' : ''}`}>
         <div className="our-process-text">
           <ol className="our-process-list">
             {steps.map((step) => (
@@ -31,9 +47,10 @@ export default function OurProcess() {
           </ol>
         </div>
         <div className="our-process-image-wrap">
+          <div className="our-process-image-glow" aria-hidden />
           <img
             src="/our-process.png"
-            alt="Our process: consultation, planning, execution, and handover"
+            alt="Aurex Solutions process: consultation, planning, execution, and handover"
             className="our-process-image"
           />
         </div>

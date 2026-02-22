@@ -1,15 +1,10 @@
 import { useState } from 'react'
-import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './ContactPage.css'
 
-const socialLinks = [
-  { label: 'Facebook', href: 'https://facebook.com', icon: Facebook },
-  { label: 'Instagram', href: 'https://instagram.com', icon: Instagram },
-  { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { label: 'Twitter', href: 'https://twitter.com', icon: Twitter },
-  { label: 'YouTube', href: 'https://youtube.com', icon: Youtube },
-]
+/* Temporarily empty – add links when social accounts are ready */
+const socialLinks: { label: string; href: string; icon: React.ComponentType<{ size?: number; strokeWidth?: number }> }[] = []
 
 /* Replace with your Google Maps embed URL: Google Maps → Share → Embed a map */
 const MAP_EMBED_URL = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.715774395576!2d72.8776559!3d19.0759837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da8edc39b09816b!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!5m2!1sen!2sin'
@@ -18,19 +13,19 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Visit us',
-    value: 'Aurex Solutions\nKhewat No 895, Khata No 909, Badshahpur,\nSector-68, Gurugram. State: Haryana, Pin code: 122101',
+    value: 'Aurex Solutions, Khewat No 895, Khata No 909, Badshahpur, Sector-68, Gurugram, Haryana 122101',
   },
   {
     icon: Phone,
     label: 'Call us',
-    value: '+91 98765 43210',
-    href: 'tel:+919876543210',
+    value: '74282 65177',
+    href: 'tel:+917428265177',
   },
   {
     icon: Mail,
     label: 'Email us',
-    value: 'hello@aurex.com',
-    href: 'mailto:hello@aurex.com',
+    value: 'Info@aurexsolutions.in',
+    href: 'mailto:Info@aurexsolutions.in',
   },
 ]
 
@@ -55,7 +50,7 @@ export default function ContactPage() {
           Get in touch
         </h1>
         <p className="contact-hero-lead">
-          Have a project in mind? We’d love to hear from you. Send a message or reach out directly.
+          Have a project in mind? Aurex Solutions would’d love to hear from you. Send a message or reach out directly.
         </p>
       </section>
 
@@ -148,23 +143,25 @@ export default function ContactPage() {
                 )
               })}
             </ul>
-            <div className="contact-social">
-              <span className="contact-social-label">Connect with us</span>
-              <div className="contact-social-icons">
-                {socialLinks.map(({ label, href, icon: Icon }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    className="contact-social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                  >
-                    <Icon size={22} strokeWidth={1.75} />
-                  </a>
-                ))}
+            {socialLinks.length > 0 && (
+              <div className="contact-social">
+                <span className="contact-social-label">Connect with us</span>
+                <div className="contact-social-icons">
+                  {socialLinks.map(({ label, href, icon: Icon }) => (
+                    <a
+                      key={label}
+                      href={href}
+                      className="contact-social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                    >
+                      <Icon size={22} strokeWidth={1.75} />
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
