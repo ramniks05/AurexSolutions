@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import './Hero.css'
 
 const HERO_SLIDES = [
@@ -48,9 +47,18 @@ export default function Hero() {
         <div className="hero-banner-content">
           <h1 className="hero-headline" key={currentIndex}>{slide.headline}</h1>
           <p className="hero-tagline" key={`tag-${currentIndex}`}>{slide.tagline}</p>
-          <Link to="/contact" className="btn-primary hero-cta">
-            Get in touch
-          </Link>
+          <div className="hero-dots" aria-label="Slide indicators">
+            {HERO_SLIDES.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                className={`hero-dot ${i === currentIndex ? 'active' : ''}`}
+                aria-label={`Go to slide ${i + 1}`}
+                aria-current={i === currentIndex ? 'true' : undefined}
+                onClick={() => setCurrentIndex(i)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

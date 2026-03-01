@@ -23,14 +23,14 @@ const socialLinks: { label: string; href: string; icon: React.ComponentType<{ si
 
 const contactInfo = {
   address: 'Aurex Solutions, Khewat No 895, Khata No 909, Badshahpur, Sector-68, Gurugram, Haryana 122101',
-  phone: '74282 65177',
+  phone: '+91-74282 65177',
   phoneHref: 'tel:+917428265177',
   email: 'Info@aurexsolutions.in',
   emailHref: 'mailto:Info@aurexsolutions.in',
 }
 
 /* Replace with your Google Maps embed URL: Google Maps → Share → Embed a map */
-const MAP_EMBED_URL = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.715774395576!2d72.8776559!3d19.0759837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da8edc39b09816b!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!5m2!1sen!2sin'
+const MAP_EMBED_URL = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d268.68885747260754!2d77.03163423869941!3d28.386331985010976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d2294448e172d%3A0xa0dcb778c287dcac!2s92PJ%2BGP5%2C%20Sector%2069%2C%20Gurugram%2C%20Haryana%20122101!5e0!3m2!1sen!2sin!4v1772342262272!5m2!1sen!2sin'
 
 export default function Footer() {
   const year = new Date().getFullYear()

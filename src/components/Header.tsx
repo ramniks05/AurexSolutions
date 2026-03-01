@@ -1,10 +1,17 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { X } from 'lucide-react'
+import { X, Mail, Phone } from 'lucide-react'
 import './Header.css'
 
 /* Replace with your WhatsApp number (country code, no + or spaces). e.g. 919876543210 */
-const WHATSAPP_NUMBER = '919876543210'
+const WHATSAPP_NUMBER = '917428265177'
+
+const TOPBAR_CONTACT = {
+  phone: '+91-74282 65177',
+  phoneHref: 'tel:+917428265177',
+  email: 'Info@aurexsolutions.in',
+  emailHref: 'mailto:Info@aurexsolutions.in',
+}
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -69,6 +76,18 @@ export default function Header() {
 
   return (
     <header className="header">
+      <div className="header-topbar">
+        <div className="header-topbar-inner">
+          <a href={TOPBAR_CONTACT.phoneHref} className="header-topbar-link">
+            <Phone size={14} strokeWidth={2} aria-hidden />
+            <span>{TOPBAR_CONTACT.phone}</span>
+          </a>
+          <a href={TOPBAR_CONTACT.emailHref} className="header-topbar-link">
+            <Mail size={14} strokeWidth={2} aria-hidden />
+            <span>{TOPBAR_CONTACT.email}</span>
+          </a>
+        </div>
+      </div>
       <div className="header-inner">
         <Link to="/" className="header-logo" aria-label="Aurex Solutions home">
           <img src="/logo.jpeg" alt="Aurex Solutions" className="header-logo-img" />
