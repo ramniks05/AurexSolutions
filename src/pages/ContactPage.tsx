@@ -29,6 +29,8 @@ const contactInfo = [
   },
 ]
 
+const WHATSAPP_NUMBER = '917428265177'
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
   const { ref, inView } = useScrollAnimation<HTMLHeadingElement>()
@@ -39,8 +41,31 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Add your form submission logic (e.g. send to API, mailto, or service)
-    console.log('Contact form:', formData)
+    
+    // Validate form
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      return
+    }
+    
+    // Format message for WhatsApp
+    const text = [
+      '*Contact Form Enquiry from Aurex Solutions Website*',
+      '',
+      `*Name:* ${formData.name.trim()}`,
+      `*Email:* ${formData.email.trim()}`,
+      formData.phone.trim() ? `*Phone:* ${formData.phone.trim()}` : '',
+      '',
+      `*Message:* ${formData.message.trim()}`,
+    ]
+      .filter(line => line !== '')
+      .join('\n')
+    
+    // Open WhatsApp with pre-filled message
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`
+    window.open(url, '_blank')
+    
+    // Reset form after opening WhatsApp
+    setFormData({ name: '', email: '', phone: '', message: '' })
   }
 
   return (

@@ -5,7 +5,7 @@ import './FAQ.css'
 const items = [
   {
     q: 'What services does Aurex Solutions offer?',
-    a: 'Aurex Solutions provides premium solutions tailored to residential, commercial, and hospitality projects—from planning through to handover and support.',
+    a: 'Aurex Solutions provides premium aluminium glass solutions tailored to residential, commercial, and hospitality projects—from planning through to handover and support.',
   },
   {
     q: 'How can I get started?',

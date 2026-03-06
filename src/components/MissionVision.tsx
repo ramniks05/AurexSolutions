@@ -5,7 +5,7 @@ const blocks = [
   {
     id: 'mission',
     title: 'Our Mission',
-    text: 'Aurex Solutions delivers premium aluminium glass and partition solutions that enhance spaces—from residential to commercial—with quality, reliability, and clear communication at every step.',
+    text: 'Aurex Solutions delivers premium aluminium glass partition solutions that enhance spaces—from residential to commercial—with quality, reliability, and clear communication at every step.',
   },
   {
     id: 'vision',
