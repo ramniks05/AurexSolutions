@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Visit us',
-    value: 'Aurex Solutions, Khewat No 895, Khata No 909, Badshahpur, Sector-68, Gurugram, Haryana 122101',
+    value: 'Aurex Solutions, Khewat No 895, Khata No 909, Badshahpur, Sector-69, Gurugram, Haryana 122101',
   },
   {
     icon: Phone,

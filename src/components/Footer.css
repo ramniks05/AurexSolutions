@@ -85,7 +85,9 @@
 }
 
 .footer-logo {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
   margin-bottom: 1rem;
   text-decoration: none;
 }
@@ -97,6 +99,19 @@
   width: 100%;
   object-fit: contain;
   /* Fixed color – no filter or transition so logo always shows original */
+}
+
+.footer-logo-text {
+  color: var(--text-primary);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.footer-logo-text-accent {
+  color: var(--text-secondary);
 }
 
 .footer-about-text {
@@ -394,6 +409,10 @@
 
   .footer-logo-img {
     max-width: 120px;
+  }
+
+  .footer-logo-text {
+    font-size: 1.1rem;
   }
 
   .footer-map {

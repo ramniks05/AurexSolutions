@@ -91,6 +91,9 @@ export default function Header() {
       <div className="header-inner">
         <Link to="/" className="header-logo" aria-label="Aurex Solutions home">
           <img src="/logo.jpeg" alt="Aurex Solutions" className="header-logo-img" />
+          <span className="header-logo-text">
+            Aurex <span className="header-logo-text-accent">Solutions</span>
+          </span>
         </Link>
         <div className="header-nav-wrap">
           <nav className={`header-nav ${menuOpen ? 'header-nav-open' : ''}`}>

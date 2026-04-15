@@ -22,7 +22,7 @@ const productLinks = [
 const socialLinks: { label: string; href: string; icon: React.ComponentType<{ size?: number; strokeWidth?: number }> }[] = []
 
 const contactInfo = {
-  address: 'Aurex Solutions, Khewat No 895, Khata No 909, Badshahpur, Sector-68, Gurugram, Haryana 122101',
+  address: 'Aurex Solutions, Khewat No 895, Khata No 909, Badshahpur, Sector-69, Gurugram, Haryana 122101',
   phone: '+91-74282 65177',
   phoneHref: 'tel:+917428265177',
   email: 'Info@aurexsolutions.in',
@@ -42,6 +42,9 @@ export default function Footer() {
           <div className="footer-section footer-about">
             <Link to="/" className="footer-logo" aria-label="Aurex Solutions home">
               <img src="/logo.jpeg" alt="Aurex Solutions" className="footer-logo-img" />
+              <span className="footer-logo-text">
+                Aurex <span className="footer-logo-text-accent">Solutions</span>
+              </span>
             </Link>
             <p className="footer-about-text">
               Aurex Solutions is a leading provider of premium aluminium glass solutions including shower cubicles, sliding doors, partitions, and more. 
