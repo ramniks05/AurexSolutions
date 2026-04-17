@@ -42,9 +42,6 @@ export default function Footer() {
           <div className="footer-section footer-about">
             <Link to="/" className="footer-logo" aria-label="Aurex Solutions home">
               <img src="/logo.jpeg" alt="Aurex Solutions" className="footer-logo-img" />
-              <span className="footer-logo-text">
-                Aurex <span className="footer-logo-text-accent">Solutions</span>
-              </span>
             </Link>
             <p className="footer-about-text">
               Aurex Solutions is a leading provider of premium aluminium glass solutions including shower cubicles, sliding doors, partitions, and more. 
