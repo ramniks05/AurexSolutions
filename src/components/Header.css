@@ -55,7 +55,6 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  gap: 0.65rem;
   text-decoration: none;
 }
 
@@ -64,19 +63,6 @@
   height: 48px;
   width: auto;
   display: block;
-}
-
-.header-logo-text {
-  color: var(--text-primary);
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  font-size: 1.35rem;
-  line-height: 1.1;
-  white-space: nowrap;
-}
-
-.header-logo-text-accent {
-  color: var(--text-secondary);
 }
 
 .header-nav-wrap {
@@ -368,9 +354,5 @@
 
   .header-logo-img {
     height: 40px;
-  }
-
-  .header-logo-text {
-    font-size: 1.15rem;
   }
 }
